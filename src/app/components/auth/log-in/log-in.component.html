@@ -1,0 +1,15 @@
+<div class="container">
+    
+    <div class="inner mt-5 mx-auto border rounded-3 d-flex flex-column">
+        <form [formGroup]="signInForm" (ngSubmit)="onSubmit()" class="mx-5 my-3">
+            <h2>Sign in</h2>
+            <div class="mt-2"><p>{{value}} <a href="#">Change</a></p></div>
+            <div class="label d-flex flex-row justify-content-between">
+                 <label for="password" class="mt-2">Password</label>
+                <label for="password" class="mt-2"><a href="#">Forgot Password</a></label>
+            </div> 
+            <input type="password" id="password" required formControlName="password">
+            <button type="submit" class="btn mt-3 mb-2 shadow-sm">Sign in</button>
+            <div><input type="checkbox" class="checkbox"><span class="ms-1">Keep me signed in.</span><a href="#"> Details <i class="fa-sharp fa-solid fa-caret-down"></i></a></div>
+        </form>
+    </div>        

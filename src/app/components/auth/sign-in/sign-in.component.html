@@ -1,0 +1,35 @@
+<div class="container">
+
+        <div class="inner mt-5 mx-auto border rounded-3 d-flex flex-column">
+            <div class="mx-5 my-3">
+                <h2>Sign in</h2>
+                <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+                    <label for="email" class="mt-2">Enter mobile phone number or email</label>
+                    <input type="text" id="email" required formControlName="email">
+                    <button type="submit" class="btn mt-3 mb-4" [disabled]="!signInForm.valid">Continue</button>
+                </form>
+
+                <p>By continuing, you agree to Amazon's <a href="#">Conditions of <br> Use</a> and <a href="#">Privacy Notice</a>.</p>
+                <p>
+
+                    <a class="help"  data-bs-toggle="collapse" href="#collapseExample"  aria-expanded="false" aria-controls="collapseExample" (click)="open()">
+                        <i class="fa-sharp fa-solid" [ngClass]="down ? 'fa-caret-down': 'fa-caret-right'"></i>
+
+                  Need Help?
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample">
+                <div class="d-flex flex-column">
+                  <a class="help" href="#">Forgot Password</a>
+                  <a class="help" href="#">Other issues with Sign-In</a>
+                </div>
+              </div>
+            </div>
+         </div>
+ <div>
+    <p class="lower px-2">New to Amazon?</p>
+    <hr>
+    <button type="button" class="btn btn-light shadow-sm">Create your Amazon account</button>
+ </div>
+
+</div>

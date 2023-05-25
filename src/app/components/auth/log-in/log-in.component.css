@@ -1,0 +1,54 @@
+label {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+input[type=password] {
+    width: 290px;
+    background-color: #fff;
+    height: 31px;
+    padding: 3px 7px;
+    line-height: normal;
+    border: 1px solid #a6a6a6;
+    border-top-color: #949494;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255,255,255,.5), 0 1px 0 rgba(0,0,0,.07) inset;
+    outline: 0;
+}
+
+ .btn {
+    background-color: #ffd814 !important; 
+    width: 290px
+}
+
+p, a {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.inner {
+    width: 380px;
+    
+}
+
+.help {
+    font-size: 13px;
+}
+
+h2 {
+    font-weight: 400 !important;
+}
+
+span {
+    font-size: 14px;
+}
+
+input[type=checkbox] {
+    transform: scale(1.1);
+    
+}
+
+i {
+    color: black;
+}
